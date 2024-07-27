@@ -5,14 +5,18 @@
  */
 var removeElement = function(nums, val) {
     var k = 0;
+    let array1 = [];
     for(i = 0; i < nums.length; i++) {
         if(nums[i] === val ) {
-            k++;
+            nums.splice(i, 1);
+            i--;
         }
     }
-    return nums.length-k;
+
+    console.log('nums : ' + nums);
+    return nums.length;
 };
 
 
 
-console.log(removeElement([0,1,2,2,3,0,4,2], 2)) //-> 2를 뺀 배열의 길이를 return 해야함
+console.log(removeElement([0,1,2,2,3,0,4,2], 2)) //-> 2를 뺀 배열의 길이와 배열을 return 해야함
