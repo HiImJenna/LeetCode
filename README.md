@@ -5,7 +5,7 @@
   
 <summary>pop/shift/slice/splice</summary>
 
-### pop()
+### 1) pop()
   #### remove the LAST element
   ```javascript
     let array = [100, 200, 300, 400 ,500];
@@ -15,7 +15,7 @@
   ```
 <br>
 
-### shift()
+### 2) shift()
   #### remove the FIRST element
   ```javascript
     let array = [100, 200, 300, 400 ,500];
@@ -25,7 +25,7 @@
   ```
   <br>
   
-### slice()
+### 3) slice()
   #### the original array doesn't change, return a new array/string
   ```javascript
     array.slice(begin, end);
@@ -49,7 +49,7 @@
 <br>
 
 
-### splice()
+### 4) splice()
   #### edit the original array
 ```javascript
   array.splice(startIndex, deleteCount, item1, item2, ...);
