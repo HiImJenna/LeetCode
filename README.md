@@ -90,10 +90,23 @@
 
 <details>
 
-  <summary></summary>
+  <summary>sort/reverse</summary>
 
+### 1) sort()
+#### non-decreasing order
+```javascript
+.sort((a,b)=>(a-b));
+```
+<br>
 
-  
+#### decreasing order
+```javascript
+.sort((a,b)=>(b-a));
+```
+<br>
+
+### 2) reverse
+
 
   
 </details>
