@@ -68,8 +68,9 @@
 
 <details>
   
-<summary>BigInt/Number/BigNumber</summary>
->> JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number
+<summary>BigInt/Number</summary>
+
+#### ⭐️ JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number
 
 ## Number
 ```javascript
@@ -83,6 +84,20 @@
   var num2 = 9999999999999999n;
   var num3 = BigInt("9999999999999999");
 ```
+<br>
+
+</details>
+
+<details>
+
+  <summary></summary>
+
+
+  
+
+  
+</details>
+
 
 
 
