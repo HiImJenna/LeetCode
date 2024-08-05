@@ -139,7 +139,7 @@ set.delete(2); // false
 ```javascript
 set.clear()
 ```
-### has()
+### ⭐️ has()
 ```javascript
 if (set.has("A")) {
   console.log("A exists"); // A는 세트에 존재합니다.
