@@ -111,14 +111,85 @@
   
 </details>
 
+<details>
+<summary>Set</summary>
+
+||Set|Array|
+|------|---|---|
+|duplicate| X | O |
+|order of data| X | O |
+<br>
+
+```javascript
+const set = new Set(); // Set(0) {size: 0}
+```
+### ⭐️ add()
+```javascript
+set.add(1); // Set(1) {1}
+set.add("A"); // Set(2) {1, 'A'}
+set.add(true); // Set(3) {1, 'A', true}
+set.add(1).add("A").add(true); // Set(3) {1, 'A', true}
+```
+### ⭐️ delete()
+```javascript
+set.delete(1); // true
+set.delete(2); // false
+```
+### ⭐️ clear()
+```javascript
+set.clear()
+```
+### has()
+```javascript
+if (set.has("A")) {
+  console.log("A exists"); // A는 세트에 존재합니다.
+}
+```
+### ⭐️ size()
+```javascript
+console.log(set.size); // 2
+```
+### ⭐️ for loop
+```javascript
+// 1
+for (const i of set) {
+  console.log(set);
+}
+
+// 2
+set.forEach((num) => console.log(num));
+```
+### ⭐️ Array -> Set
+```javascript
+const array = [1, 2, 2, 3, 3, 3];
+const set = new Set(array); // Set(3) {1, 2, 3}
+```
+### ⭐️ Set -> Array
+```javascript
+const array = [...set]; // [1, 2, 3]
+//or
+const array = Array.from(set);
+```
+### ⭐️ union / intersection / difference
+```javascript
+const set1 = new Set([1, 2, 3, 4, 5]);
+const set2 = new Set([4, 5, 6, 7, 8]);
+
+// union
+const union = new Set([...set1, ...set2]);
+console.log([...union]); // [1, 2, 3, 4, 5, 6, 7, 8]
+
+// intersection
+const intersection = new Set([...set1].filter((value) => set2.has(value)));
+console.log([...intersection]); // [4, 5]
+
+// differenct
+const difference = new Set([...set1].filter((value) => !set2.has(value)));
+console.log([...difference]); // [1, 2, 3]
+```
+</details>
 
 
 
 
 
-
-
-
-
-
-</details
