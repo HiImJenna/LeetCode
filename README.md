@@ -191,6 +191,7 @@ console.log([...difference]); // [1, 2, 3]
 
 <details>
   <summary>switching position</summary>
+  
 ```javascript
 [nums[low], nums[high]] = [nums[high], nums[low]];
 ```
